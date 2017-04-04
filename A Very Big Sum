@@ -1,0 +1,22 @@
+import Foundation
+
+
+
+
+
+
+var sum = 0
+
+let n = Int(readLine()!)!
+
+let arr = readLine()!.components(separatedBy: " ").map{ Int($0)! }
+
+
+
+for i in 0...n - 1 {
+    
+    sum += arr[i]
+    
+}
+
+print(sum)
