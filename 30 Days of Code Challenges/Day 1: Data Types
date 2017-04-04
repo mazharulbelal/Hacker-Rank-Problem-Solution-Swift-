@@ -1,0 +1,13 @@
+import Foundation
+var sumi = Int(readLine()!)!
+var sumd = Double(readLine()!)!
+var sums = readLine()!
+
+
+var ii = i + sumi 
+var dd = d + sumd
+var sss = s + sums
+
+print(ii)
+print(dd)
+print(sss)
