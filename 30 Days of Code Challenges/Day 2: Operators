@@ -1,0 +1,21 @@
+import Foundation
+
+
+
+var meal = Double(readLine()!)!
+var tipsPercent = Int(readLine()!)!
+var taxPersent = Int(readLine()!)!
+
+var Finaltips = Double(tipsPercent)
+var Finaltaxs = Double(taxPersent)
+
+
+
+
+var tips = meal * Finaltips / 100
+var tax = meal * Finaltaxs / 100
+
+var result = round (meal + tips + tax)
+var FinalResult = Int(result)
+print("The total meal cost is \(FinalResult) dollars." )
+
