@@ -1,0 +1,25 @@
+import Foundation
+
+let num = Int(readLine()!)!
+
+
+var iterationCount = 0
+
+
+var repeatedOnes = 0
+
+
+let arr: [Character] = String(num, radix: 2).characters.map({$0})
+
+
+
+for i in 0 ..< arr.count {
+    if arr[i] == "1" {
+        iterationCount += 1
+        repeatedOnes = (iterationCount > repeatedOnes) ? iterationCount : repeatedOnes
+    } else {
+        iterationCount = 0
+    }
+}
+
+print(repeatedOnes)
